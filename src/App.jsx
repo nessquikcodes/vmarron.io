@@ -11,8 +11,10 @@ function App() {
 		<BrowserRouter>
 			<div className="App">
 				<nav className="navigation">
-					<img src={logo} className="logo-image" alt="Logo Image" />
-					<div className="navigation-sub">
+					<div className="nav-brand">
+						<img src={logo} className="logo-image" alt="Logo" />
+					</div>
+					<div className="nav-links">
 						<Link to="/" className="item">
 							Projects
 						</Link>
@@ -22,6 +24,20 @@ function App() {
 						<Link to="/contact" className="item">
 							Contact
 						</Link>
+					</div>
+					<div className="nav-buttons">
+						<a
+							href="https://github.com/vmarron"
+							target="_blank"
+							className="item">
+							<i className="fa-brands fa-github fa-xl"></i>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/vanessamarron/"
+							target="_blank"
+							className="item">
+							<i className="fa-brands fa-linkedin fa-xl"></i>
+						</a>
 					</div>
 				</nav>
 

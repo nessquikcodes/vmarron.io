@@ -1,5 +1,8 @@
+/** Main-content css  **/
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,7 +15,36 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/** Nav css  **/
+.navigation {
+  max-width:inherit;
+  max-height:70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2px;
+}
+
+.nav-links {
+  margin-right: auto;
+}
+
+.nav-buttons {
+  margin-left: auto;
+}
+
+.logo-image {
+  height: 2.5em;
+  width: 3.5em;
+}
+
+.item {
+  margin-inline: 5px;
+  text-decoration: none;
 }
