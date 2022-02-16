@@ -26,17 +26,14 @@ function App() {
 						</Link>
 					</div>
 					<div className="nav-buttons">
-						<a
-							href="https://github.com/vmarron"
-							target="_blank"
-							className="item">
-							<i className="fa-brands fa-github fa-xl"></i>
+						<a href="https://github.com/vmarron" target="" className="item">
+							<i className="fa fa-github"></i>
 						</a>
 						<a
 							href="https://www.linkedin.com/in/vanessamarron/"
-							target="_blank"
+							target=""
 							className="item">
-							<i className="fa-brands fa-linkedin fa-xl"></i>
+							<i className="fa fa-linkedin"></i>
 						</a>
 					</div>
 				</nav>

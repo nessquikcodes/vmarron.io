@@ -1,50 +1,76 @@
+/* Selects the root element of the document:
+   <html> in the case of HTML */
+:root {
+  --fa-font-brands: normal 900 1.8em/2 "Font Awesome 6 Brands";
+  --fa-border-color: red;
+  --fa-primary-color: rgb(33, 37, 33);
+  --fa-secondary-color: red;
+  --fa-height: 1em;
+  --fa-width: 1.2em;
+  --fa-display: inline-block;
+}
+
 /** Main-content css  **/
 .App {
-  text-align: center;
   display: flex;
-  flex-flow: column wrap;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+  flex-flow: row wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  height: 750px;
+  width: 900px;
+  margin: auto;
+  align-content: stretch;
+  align-items: center;
 }
 
 /** Nav css  **/
 .navigation {
-  max-width:inherit;
-  max-height:70px;
+  width: inherit;
+  height: auto;
   display: flex;
+  flex-direction: column;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 2px;
+  margin: 5px;
+}
+
+.navigation > div {
+  display: inline-flex;
+  width: auto;
+  height: 100%;
+  max-height:inherit;
+  align-items: center;
 }
 
 .nav-links {
   margin-right: auto;
+  align-items: center;
 }
 
 .nav-buttons {
+  width:auto;
   margin-left: auto;
 }
 
 .logo-image {
-  height: 2.5em;
-  width: 3.5em;
+  height: auto;
+  min-width: 3.5em;
+  margin: auto;
 }
 
 .item {
-  margin-inline: 5px;
   text-decoration: none;
+  margin: 5px;
+  width: auto;
+}
+
+svg {
+  font: normal 400 1em/1 "Font Awesome 6 Brands";
+  display: var(--fa-display);
+  width: var(--fa-width);
+  font: var(--fa-font-brands);
+  color: var(--fa-primary-color);
+  height: var(--fa-height);
 }
